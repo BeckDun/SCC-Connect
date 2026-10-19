@@ -1,6 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
+# !>!>!>   \/ \/ \/  Change this username and remove the angle brackets
 SSH_HOST="<username>@global.prd.ga.launchpad.nvidia.com"
 SSH_PORT=12986
 LOCAL_PORT=22222
