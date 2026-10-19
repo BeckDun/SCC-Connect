@@ -1,12 +1,12 @@
 #!/bin/bash
 set -euo pipefail
 
-# !>!>!>   \/ \/ \/  Change this username and remove the angle brackets
+# !>!>!>   \/ \/ \/  Change the username and paraview path (remove the angle brackets)
 SSH_HOST="<username>@global.prd.ga.launchpad.nvidia.com"
+PARAVIEW=<replaceMe>/ParaView-6.2.0-MPI-Linux-Python3.12-x86_64/bin/paraview
 SSH_PORT=12986
 LOCAL_PORT=22222
 REMOTE_PORT=11111
-PARAVIEW=/home/wolfgang/Apps/ParaView-6.2.0-MPI-Linux-Python3.12-x86_64/bin/paraview
 CTRL_SOCK="/tmp/pv-tunnel-$$.sock"
 
 ssh -f -N \
