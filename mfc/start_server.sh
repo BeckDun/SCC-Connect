@@ -17,6 +17,10 @@
 #     rendering on a headless node. The alternatives are GLX, which needs
 #     an X display, and OSMesa, which renders in software on the CPU and
 #     is much slower.
+#
+# This script must be launched from the <path>/ParaView-6.2.0-MPI-Linux-Python3.12-x86_64/bin/ directory
+# Copy it there with:
+# cp start_server.sh <path>/ParaView-6.2.0-MPI-Linux-Python3.12-x86_64/bin/
 
 while true; do
     ./pvserver --multi-clients --force-offscreen-rendering --opengl-window-backend=EGL \
