@@ -1,0 +1,4 @@
+FFTW Errors:
+Not found?
+See if it exists: find ~/MFC/build -name fftw3.f03
+Build it specifically: ./mfc.sh build -t fftw --gpu acc -j 8
