@@ -1,0 +1,12 @@
+-- clean # deletes all builds and returns MFC to a clean state
+-- test # runs a test suite for build validity; does not guarantee all example cases will run
+-- build (only needed once per cpu/acc/mp)
+-j <int> # distributes over more cpus to build faster
+--gpu (acc/mp) # build for gpu using acc or mp - Same dependencies, NVHPC and mpi (a version of mpi also ships with NVHPC, so don't necessarily need to be separate)
+--no-gpu # build for cpu
+
+-- run
+-n (1/2) # How many gpus to run with, mfc assigns jobs to whole gpus and is not rank based.
+-N 1 # This would be used to distribute to more nodes, but we only have 1 node so we don't actually need to use it
+--gpu (acc/mp)
+--no-gpu

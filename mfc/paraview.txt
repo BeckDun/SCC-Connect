@@ -1,0 +1,14 @@
+Paraview Download (for Linux)
+ - wget https://www.paraview.org/files/v6.2/ParaView-6.2.0-MPI-Linux-Python3.12-x86_64.tar.gz
+
+Download it and unzip it. Go to /ParaView-6.2.0-MPI-Linux-Python3.12-x86_64/bin launch pvserver.
+Commands:
+(I use this in a dedicated tmux session, probably a better way)
+Run this on the cluster for connection. This setup is account, ssh specific.
+ - ./start_pvserver.sh # Opens a port for you to connect to
+
+Run this on your local machine. Use the same download command if you have Linux. Otherwise, find the 6.2.0 Paraview for your operating system.
+ - ./start_paraview.sh # Opens an ssh tunnel to the cluster and then launches paraview with a connection through it.
+
+Notes on Paraview for MFC:
+
