@@ -1,0 +1,14 @@
+Loaded 73 SBN observations
+d01: 73 WRF timestamps
+d02: 73 WRF timestamps
+Matching timestamps: 73
+First: 2019-01-28 00:00:00
+Last:  2019-01-31 00:00:00
+
+WRF Temperature Comparison at SBN
+-------------------------------------
+Matched timestamps: 73
+Domain 1 (9 km): RMSE = 2.31 °C, MBE = -1.73 °C
+Domain 2 (3 km): RMSE = 2.27 °C, MBE = -1.69 °C
+Domain 2 (3 km) has the lower RMSE.
+Plot saved to: /home/nevnez/WRF-visualization/SBN_temperature_comparison_task3.png
