@@ -10,3 +10,4 @@
 -N 1 # This would be used to distribute to more nodes, but we only have 1 node so we don't actually need to use it
 --gpu (acc/mp)
 --no-gpu
+-- <args> # Double hyphen is the break indicator to separate what to run the script on and the arguments that change the simulation
